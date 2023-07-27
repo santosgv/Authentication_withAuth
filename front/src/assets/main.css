@@ -4,6 +4,11 @@
   margin: 0px;
 }
 
+.text-center{
+  display: grid;
+  text-align: center;
+}
+
 a,
 .green {
   text-decoration: none;

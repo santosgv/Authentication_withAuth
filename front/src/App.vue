@@ -10,7 +10,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/home">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/login">login</RouterLink>
+        <RouterLink to="/cadastro">Cadastro</RouterLink>
         <RouterLink to="/Dashboard">Dashboard</RouterLink>
+        <RouterLink to="/profile">profile</RouterLink>
         <RouterLink to="/logout">logout</RouterLink>
       </nav>
     </div>
@@ -21,6 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  display: inline-block;
   line-height: 1.5;
   max-height: 100vh;
   width: auto;

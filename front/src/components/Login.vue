@@ -28,10 +28,13 @@ export default {
         // Verifique se o token JWT foi retornado no corpo da resposta
         if (response.data.access) {
           // Guarde o token JWT em localStorage ou em outro local seguro
-          localStorage.setItem('token', response.data.access);
+          localStorage.setItem('user-token', response.data.access);
+          localStorage.setItem('refresh', response.data.refresh);
+          localStorage.setItem('pk_user', response.data.user.pk);
+          localStorage.setItem('username', response.data.user.username);
 
           // Redirecione para a página do painel após o login
-          this.$router.push('/dashboard');
+          this.$router.push('/profile');
         } else {
           // Caso o token não seja retornado, mostre uma mensagem de erro
           alert('Credenciais inválidas. Tente novamente.');
